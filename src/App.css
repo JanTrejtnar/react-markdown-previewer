@@ -5,48 +5,47 @@
   text-align: center;
 }
 
-.markdown-input {
+.editor-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
+  
   padding: 2rem;
-  max-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
-  flex-wrap: wrap;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.markdown-input > div {
-  flex: 1;
-  min-width: 300px;
-}
+
 
 .markdown-input textarea {
-  width: 500px;
-  height: 400px;
+  min-width: 300px;
+  min-height: 300px;
+  max-height: 60vh;
+
   padding: 1rem;
   font-size: 1rem;
   font-family: monospace;
   border-radius: 8px;
   border: 1px solid #ccc;
   resize: vertical;
-  box-sizing: border-box;
   background-color: #fff;
   color: #000;
 }
 
 
 .markdown-result {
-  max-width: 500px;
-  min-height: 400px;
+  min-width: 350px;
+  min-height: 300px;
+  max-height: 60vh;
+
   padding: 1rem;
   background-color: #f9f9f9;
   border-radius: 8px;
   border: 1px solid #ccc;
   overflow-y: auto;
-  box-sizing: border-box;
-  color: #000;
   text-align: left;
 }
 
